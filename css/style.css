@@ -2,10 +2,104 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
 }
-
+/**MAIN**/
 .container {
     margin: 10px auto;
     width: 920px;
     background-color: lightcoral;
 }
+
+.product-container {
+    background-color: white;
+    display: inline-block;
+    width: 33%;
+}
+
+/**IMMAGINE PRODOTTO**/
+
+img {
+    width: 100%;
+}
+
+.picture {
+    width: 100%;
+    position: relative;
+}
+
+.like {
+    background-color: white;
+    font-size: 35px;
+    width: 45px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    z-index: 2;
+}
+
+.tags {
+    position: absolute;
+    bottom: 12px;
+    z-index: 2;
+}
+
+.tag {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+    padding: 6px 5px;
+}
+
+.tag.discount {
+    background-color: #ec0136; 
+}
+
+.tag.feature {
+    background-color: #00875a; 
+}
+
+/**HOVER**/
+
+.img-swap {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.picture:hover .img-swap {
+        display: inline;
+}
+
+
+
+/**INFO PRODOTTO**/
+
+.brand, .price {
+    font-size: 14px;
+   }
+
+.description, .final, .full {
+        font-weight: 900;
+}
+.description {
+    font-size: 15px;
+}
+
+.final {
+    color: red;
+}
+
+.full {
+    text-decoration: line-through;
+}
+
+
+
+
