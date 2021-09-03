@@ -4,18 +4,20 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
+
 /**MAIN**/
+
 .main-container {
     margin: 10px auto;
     width: 920px;
-    background-color: lightcoral;
     word-spacing: 3px;
 }
 
 .product-container {
     background-color: white;
     display: inline-block;
-    width: calc(100% / 3 - 5px)
+    width: calc(100% / 3 - 5px);
+    word-spacing: normal;
 }
 
 /**IMMAGINE PRODOTTO**/
@@ -77,8 +79,6 @@ img {
 .picture:hover .img-swap {
         display: inline;
 }
-
-
 
 /**INFO PRODOTTO**/
 
